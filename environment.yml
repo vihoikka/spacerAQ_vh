@@ -1,0 +1,13 @@
+name: spacerAQ_vh_2020
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.6   # or 2.7
+  - cd-hit=4.8.1
+  - bowtie2=2.3.0
+  - samtools=1.9
+  - seqtk=1.3
+  - weblogo=3.7.4
+  - trimmomatic=0.36
+  - biopython=1.76
