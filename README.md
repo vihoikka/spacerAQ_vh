@@ -1,7 +1,7 @@
 # spacerAQ_vh
 Pipeline for analyzing data in Hoikkala et al. 2020: "Shared CRISPR-Cas spacer acquisition between subtypes VI-B and II-C" (submitted to Nature). Currently for review purposes only.
 
-Typical install time: 10 min. Typical run time of the pipeline: 2-5 minutes without simulations, one hour with simulations. Required operating system: Unix (Linux, MacOS with shell bash. Tested only on OSX 10.14.6). Output: several files and folders regarding extracted spacers and their properties.
+Typical install time: 10 min. Typical run time of the pipeline: 2-5 minutes without simulations, one hour with simulations. Required operating system: Unix (Linux, MacOS with shell bash. Tested only on OSX 10.14.6). Output: several files and folders regarding extracted spacers and their properties. Running the pipeline with default settings will reproduce the results presented in the manuscript.
 
 # Instructions
 The analysis can be run using the pipeline spacerpipeline_hoikkala_etal_2020.sh.
