@@ -1,5 +1,5 @@
 # spacerAQ_vh
-Pipeline for analyzing data in Hoikkala et al. 2020: "Shared CRISPR-Cas spacer acquisition between subtypes VI-B and II-C". Currently for review purposes only. The pipeline has been tested with OSX 10.14.6 using Shell bash.
+Pipeline for analyzing data in Hoikkala et al. 2020: "Shared CRISPR-Cas spacer acquisition between subtypes VI-B and II-C" (submitted to Nature). Currently for review purposes only. The pipeline has been tested with OSX 10.14.6 using Shell bash.
 
 # Instructions
 The analysis can be run using the pipeline spacerpipeline_hoikkala_etal_2020.sh.
