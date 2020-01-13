@@ -18,4 +18,4 @@ Files are in https://bit.ly/2tVWGhW. Copy these files to the folder pipeline/raw
 Use command `sh spacerpipeline_hoikkala_etal_2020.sh`
 
 # R
-Once the pipeline has been run, the provided R files can be used to illustrate the data
+Once the pipeline has been run, the provided R files can be used to illustrate the results
