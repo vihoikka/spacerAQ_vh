@@ -12,7 +12,7 @@ The list of necessary dependencies are in the file environment.yml. The easiest 
 ... or modify the script to indicate where your trimmomatic file is located. It is also possible to skip trimming - this will not dramatically alter the results (but requires you to modify file paths in spacerpipeline_hoikkala_etal_2020.sh).
 
 ## 3. Download raw data files
-Files are in https://bit.ly/2tVWGhW. Copy these files to the folder pipeline/raw_reads.
+Link for the raw data is in the materials and methods file. Copy these fastq files to the folder pipeline/raw_reads.
 
 ## 4. Run the pipeline
 Use command `sh spacerpipeline_hoikkala_etal_2020.sh`
