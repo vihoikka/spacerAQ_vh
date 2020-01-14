@@ -10,7 +10,7 @@ Several steps need to be taken to setup the run after downloading the files on y
 ## 1. Install dependencies
 The list of necessary dependencies are in the file environment.yml. The easiest way to install them is to create a new [Anaconda](https://www.anaconda.com/distribution/) environment with the command `conda env create -f environment.yml` while in the root folder. This will create a new conda environment named spacerAQ_vh_2020. Activate this environment to continue.
 
-## 2. Place your trimmomatic-0.36.jar in root folder (if the current .jar does not work)
+## 2. Locate your trimmomatic-0.36.jar and copy it in the root folder (same folder where environment.yml is located)
 ... or modify the script to indicate where your trimmomatic file is located. It is also possible to skip trimming - this will not dramatically alter the results (but requires you to modify file paths in spacerpipeline_hoikkala_etal_2020.sh).
 
 ## 3. Download raw data files
