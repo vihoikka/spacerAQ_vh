@@ -36,5 +36,3 @@ cycleCounter=$((++cycleCounter))
 done
 
 printf "${clusteredList[*]}\n" > spacersimulation_locations/PAM_set.txt
-
-#cd-hit-est-2d -i ../Commonspacers/B+P_b_+1_C1_mapped_fcl2_C1.fastq -i2 100percent_testset.fasta -o clust.clstr -c 1.0 -M 16000 -T 8
