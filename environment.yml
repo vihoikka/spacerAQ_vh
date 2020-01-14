@@ -11,3 +11,4 @@ dependencies:
   - weblogo=3.7.4
   - trimmomatic=0.36
   - biopython=1.76
+  - fuzzywuzzy=0.15.1
