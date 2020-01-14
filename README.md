@@ -4,7 +4,7 @@ Pipeline for analyzing data in Hoikkala et al. 2020 (submitted to Nature). Curre
 Typical install time: 10 min. Typical run time of the pipeline: 2-5 minutes without simulations, one hour with simulations (simulations currently disabled; to enable, uncomment line 264 from spacerpipeline_hoikkala_etal_2020.sh). Required operating system: Unix (tested with MacOS 10.14.6 with shell bash). Output: several files and folders regarding extracted spacers and their properties. Running the pipeline with default settings will reproduce the results presented in the manuscript. R scripts can be used to recreate figures of the manuscript after data has been generated.
 
 # Instructions
-The analysis can be run using the pipeline spacerpipeline_hoikkala_etal_2020.sh.
+The analysis is run using the shell pipeline spacerpipeline_hoikkala_etal_2020.sh.
 Several steps need to be taken to setup the run after downloading the files on your computer (remember to maintain folder structure)
 
 ## 1. Install dependencies
