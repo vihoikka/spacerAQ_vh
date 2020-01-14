@@ -1,7 +1,7 @@
 # spacerAQ_vh
 Pipeline for analyzing data in Hoikkala et al. 2020 (submitted to Nature). Currently for review purposes only.
 
-Typical install time: 10 min. Typical run time of the pipeline: 2-5 minutes without simulations, one hour with simulations (simulations currently disabled; to enable, uncomment line 264 from spacerpipeline_hoikkala_etal_2020.sh. Required operating system: Unix (Linux, MacOS with shell bash. Tested only on OSX 10.14.6). Output: several files and folders regarding extracted spacers and their properties. Running the pipeline with default settings will reproduce the results presented in the manuscript. R scripts will use the generated data to create figures of the manuscript.
+Typical install time: 10 min. Typical run time of the pipeline: 2-5 minutes without simulations, one hour with simulations (simulations currently disabled; to enable, uncomment line 264 from spacerpipeline_hoikkala_etal_2020.sh). Required operating system: Unix (tested with MacOS 10.14.6 with shell bash). Output: several files and folders regarding extracted spacers and their properties. Running the pipeline with default settings will reproduce the results presented in the manuscript. R scripts can be used to recreate figures of the manuscript after data has been generated.
 
 # Instructions
 The analysis can be run using the pipeline spacerpipeline_hoikkala_etal_2020.sh.
