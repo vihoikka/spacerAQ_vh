@@ -4,10 +4,10 @@ library(ggplot2)
 library(MASS)
 library(scales)
 
-
+#If this doesn't work, make sure to have run the simulation in the pipeline (not run by default)
 #### Analysis for random spacers ####
 
-randomdata <- read.delim('../pipeline/spacersimulation_v2/random_set.txt', header = F, sep=' ')
+randomdata <- read.delim('../pipeline/spacersimulation_locations/random_set.txt', header = F, sep=' ')
 randomdata <- t(randomdata)
 
 comparedSpacers <- 430 #number of spacers simulated in each run of the simulation
@@ -21,7 +21,7 @@ meanSim <- mean(randomdataFrame$identity)
 
 ##### Analysis for PAM spacers ####
 
-PAMdata <- read.delim('../pipeline/spacersimulation_v2/PAM_set.txt', header = F, sep=' ')
+PAMdata <- read.delim('../pipeline/spacersimulation_locations/PAM_set.txt', header = F, sep=' ')
 PAMdata <- t(PAMdata)
 
 PAMdataFrame <- data.frame("clusters" = comparedSpacers - PAMdata) #get number of clusters for each run
