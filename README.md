@@ -5,18 +5,15 @@ Typical install time: 10 min. Typical run time of the pipeline: 2-5 minutes with
 
 # Instructions
 The analysis is run using the shell pipeline spacerpipeline_hoikkala_etal_2020.sh.
-Several steps need to be taken to setup the run after downloading the files on your computer (remember to maintain folder structure)
+Some steps need to be taken to setup the run after downloading the files on your computer (remember to maintain folder structure)
 
 ## 1. Install dependencies
 The list of necessary dependencies are in the file environment.yml. The easiest way to install them is to create a new [Anaconda](https://www.anaconda.com/distribution/) environment with the command `conda env create -f environment.yml` while in the root folder. This will create a new conda environment named spacerAQ_vh_2020. Activate this environment to continue.
 
-## 2. Locate your trimmomatic-0.36.jar and copy it in the root folder (same folder where environment.yml is located)
-... or modify the script to indicate where your trimmomatic file is located. It is also possible to skip trimming - this will not dramatically alter the results (but requires you to modify file paths in spacerpipeline_hoikkala_etal_2020.sh).
-
-## 3. Download raw data files
+## 2. Download raw data files
 Link for the raw data is in the materials and methods file. Copy these fastq files to the folder pipeline/raw_reads.
 
-## 4. Run the pipeline
+## 3. Run the pipeline
 Use command `sh spacerpipeline_hoikkala_etal_2020.sh`
 
 # R
