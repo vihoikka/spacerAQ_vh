@@ -72,7 +72,7 @@ do
 	locus=${loci[${lociCounter}]}
 
 	#Dispose bad quality reads with Trimmomatic
-	trimmomatic-0.36.jar SE -phred33 ${inputDir}/$inputFile.fastq ${TrimmomaticOutputDir}/${inputFile}_trimmed.fastq SLIDINGWINDOW:3:21 MINLEN:100 TRAILING:23
+	trimmomatic SE -phred33 ${inputDir}/$inputFile.fastq ${TrimmomaticOutputDir}/${inputFile}_trimmed.fastq SLIDINGWINDOW:3:21 MINLEN:100 TRAILING:23
 
 	#Extract spacers from the reads with spExt and store as fastq. Discard command removes existing wt-spacers. Nodup prevents from removing duplicates (use dup to remove them)
 	python ../python/spExtSets_0319.py ${TrimmomaticOutputDir}/${inputFile}_trimmed.fastq ${SPACERSdir}/${spacersOutputFile}_${locus} $locus nodup discard
