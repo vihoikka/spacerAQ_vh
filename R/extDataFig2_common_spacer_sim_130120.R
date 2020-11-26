@@ -52,10 +52,10 @@ observedTypeVI <- 0.58
 
 fontSize = 3
 fontFamily = "Arial"
-colorpalette <- c("#E69F00", "#999999", "#56B4E9", "#009E73",
+colorpalette <- c("#999999", "#999999", "#56B4E9", "#009E73",
                   "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
-ggplot(randomdataFrame, aes(x=identity)) + 
+simplot <- ggplot(randomdataFrame, aes(x=identity)) + 
   geom_histogram(aes(y=..density..), bins=bins, fill=colorpalette[1], alpha = 0.8) +
   geom_histogram(data = PAMdataFrame, aes(y=..density..), bins=bins, fill=colorpalette[2], alpha=0.8) +
   scale_colour_manual(values=colorpalette) +
@@ -67,19 +67,20 @@ ggplot(randomdataFrame, aes(x=identity)) +
                 color = colorpalette[1], size = 0.6, alpha = 0.6, n = 1000) +
   stat_function(fun = function(x) dnorm(x, mean = fitPAM$estimate[1], sd = fitPAM$estimate[2]),
                 color = colorpalette[2], size = 0.6, alpha = 0.6, n = 1000) +
-  annotate("text", label = "Type VI\nspacer pool", x = observedTypeVI, y=9, size = fontSize, colour = "black", family = fontFamily)  +
+  annotate("text", label = "Type VI\nspacer pool", x = observedTypeVI, y=14, size = fontSize, colour = "black", family = fontFamily)  +
   # annotate("text", label = "Type VI\n(rep. b)", x = observedB+0.045, y=38, size = fontSize, colour = "black", family = fontFamily)  +
   #  annotate("text", label = "Type VI\n (rep. e)", x = observedE-0.045, y=38, size = fontSize, colour = "black", family = fontFamily)  +
-  annotate("text", label = "Random\nspacers", x = fitRandom$estimate[1]+0.05, y=20, size = fontSize, colour = colorpalette[1], family = fontFamily)  +
-  annotate("text", label = "Random\nPAM spacers", x = fitPAM$estimate[1], y=28, size = fontSize, colour = colorpalette[2], family = fontFamily)  +
+  annotate("text", label = "Simulated\nrandom\nspacers", x = fitRandom$estimate[1]+0.04, y=20, size = fontSize, colour = colorpalette[1], family = fontFamily, hjust = 0)  +
+  annotate("text", label = "Simulated\nrandom\nPAM spacers", x = fitPAM$estimate[1]+0.04, y=20, size = fontSize, colour = colorpalette[2], family = fontFamily, hjust = 0)  +
   #geom_point(stat="identity") +
   #annotate("point", x=0.6, y=0, label="b", color="red")+
-  annotate("pointrange", x=observedTypeVI, y=0, ymin=0, ymax=4, color="black")+
+  annotate("pointrange", x=observedTypeVI, y=0, ymin=0, ymax=6, color="black", size = 0.5)+
   #annotate("pointrange", x=observedB, y=0, ymin=0, ymax=50, color="black")+
   #annotate("pointrange", x=observedE, y=0, ymin=0, ymax=50, color="black")+
   #annotate(x=0.6, ymin=0, ymax=0, color="red") +
   #geom_line(arrow = arrow(length=unit(0.30,"cm"), ends="first", type = "closed"))
-  xlab("Proportion of identical spacers with the type II-C spacer pool") +
+  xlab("Proportion of identical VI-B spacers with the type II-C spacer pool") +
+  theme_bw() +
   theme(text=element_text(family=fontFamily, size = fontSize),
         axis.line = element_line(colour = "black"),
         panel.grid.major = element_blank(),
@@ -93,9 +94,12 @@ ggplot(randomdataFrame, aes(x=identity)) +
         panel.background = element_blank(),
         plot.margin = unit(c(0.1,1,0.1,1),"cm")) #top, right, bottom, left
 
+ggsave(simplot, filename="simplot.png", height = 1.3, width = 6)
+
 #### Statistical testing ####
 
 P_value_randomSpacers <- dnorm(observedPooled, fitRandom$estimate[1], fitRandom$estimate[2]) #T-test to compare our observed value to theoretical distribution modeled on the simulated data
 P_value_randomSpacers
 P_value_PAMSpacers <- dnorm(observedPooled, fitPAM$estimate[1], fitPAM$estimate[2]) #T-test to compare our observed value to theoretical distribution modeled on the simulated data
 P_value_PAMSpacers
+

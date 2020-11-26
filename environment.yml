@@ -12,3 +12,4 @@ dependencies:
   - trimmomatic=0.36
   - biopython=1.76
   - fuzzywuzzy=0.15.1
+  - ghostscript=9.53.3
