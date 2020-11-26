@@ -1,10 +1,10 @@
 # spacerAQ_vh
 Pipeline for analyzing data in Hoikkala et al. 2020. Currently for review purposes only.
 
-Typical install time: 10 min.  
-Typical run time of the pipeline: 2-5 minutes without simulations, one hour with simulations (simulations currently disabled; to enable, uncomment line 264 from spacerpipeline_absolute_hoikkala_etal_2020.sh or from spacerpipeline_unique_hoikkala_etal_2020.sh).  
-Required operating system: Unix (tested with MacOS 10.15.7 with zsh).  
-Output: several files and folders regarding extracted spacers and their properties. Running the pipeline with default settings will reproduce the results presented in the manuscript. R scripts can be used to recreate figures of the manuscript after data has been generated. Separate pipeline scripts for running analyses on either absolute or unique spacers (spacerpipeline_absolute_hoikkala_etal_2020.sh or spacerpipeline_unique_hoikkala_etal_2020.sh).  
+**Typical install time**: 10 min.  
+**Typical run time of the pipeline**: 2-5 minutes without simulations, one hour with simulations (simulations currently disabled; to enable, uncomment line 264 from spacerpipeline_absolute_hoikkala_etal_2020.sh or from spacerpipeline_unique_hoikkala_etal_2020.sh).  
+**Required operating system**: Unix (tested with MacOS 10.15.7 with zsh).  
+**Output**: several files and folders regarding extracted spacers and their properties. Running the pipeline with default settings will reproduce the results presented in the manuscript. R scripts can be used to recreate figures of the manuscript after data has been generated. Separate pipeline scripts for running analyses on either absolute or unique spacers (spacerpipeline_absolute_hoikkala_etal_2020.sh or spacerpipeline_unique_hoikkala_etal_2020.sh).  
 
 # Instructions
 The analysis is run using the shell pipeline spacerpipeline_absolute_hoikkala_etal_2020.sh or spacerpipeline_unique_hoikkala_etal_2020.sh.  
@@ -22,4 +22,5 @@ Run the pipeline `sh spacerpipeline_absolute_hoikkala_etal_2020.sh` or `sh space
 # R
 Once the pipeline has been run, the provided R files can be used to illustrate the results.
 
+# Help
 For any questions, create a new github issue or email me at ville.hoikkala@jyu.fi
