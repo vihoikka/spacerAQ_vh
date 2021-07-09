@@ -14,7 +14,7 @@ Some setup is required after downloading the files on your computer (remember to
 The list of necessary dependencies are in the file environment.yml. The easiest way to install them is to create a new [Anaconda](https://www.anaconda.com/distribution/) environment with the command `conda env create -f environment.yml` while in the root folder. This will create a new conda environment named spacerAQ_vh_2020. Activate this environment to continue.
 
 ## 2. Download raw data files
-Link for the raw data is in the materials and methods file of the manuscript. Copy these fastq files to the folder pipeline/raw_reads.
+Raw reads are in NCBI's SRA database under the accession number SAMN18022999. Copy these fastq files to the folder pipeline/raw_reads.
 
 ## 3. Run the pipeline
 Run the pipeline `sh spacerpipeline_absolute_hoikkala_etal_2020.sh` or `sh spacerpipeline_unique_hoikkala_etal_2020.sh`
