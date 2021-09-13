@@ -1,5 +1,5 @@
 # spacerAQ_vh
-Pipeline for analyzing data in Hoikkala et al. 2020 (mBio DOI: https://doi.org/10.1128/mBio.03338-20)
+Pipeline for analyzing data in Hoikkala et al. 2021 (mBio DOI: https://doi.org/10.1128/mBio.03338-20)
 
 **Typical install time**: 10 min.  
 **Typical run time of the pipeline**: 2-5 minutes without simulations, one hour with simulations (simulations currently disabled; to enable, uncomment line 264 from spacerpipeline_absolute_hoikkala_etal_2020.sh or from spacerpipeline_unique_hoikkala_etal_2020.sh).  
